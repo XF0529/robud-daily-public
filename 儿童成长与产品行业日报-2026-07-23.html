@@ -1,0 +1,517 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robud 儿童产品行业日报 - 2026-07-23</title>
+  <style>
+    :root {
+      --brand-brown: #8a5a36;
+      --deep-brown: #4d3828;
+      --warm-paper: #fbf7ef;
+      --cream: #fffdf8;
+      --sage: #7f9271;
+      --sage-soft: #eef3e8;
+      --blue: #2f6fb3;
+      --line: #e7ddcf;
+      --text: #2f2b27;
+      --muted: #776d62;
+      --gold: #c7902e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--warm-paper);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+      line-height: 1.68;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .page {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 36px 0 54px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: end;
+      padding: 32px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.92), rgba(255,253,248,.86)),
+        repeating-linear-gradient(90deg, rgba(138,90,54,.07) 0, rgba(138,90,54,.07) 1px, transparent 1px, transparent 22px);
+    }
+    .kicker {
+      color: var(--sage);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 8px 0 10px;
+      color: var(--brand-brown);
+      font-size: 30px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+    .subtitle { margin: 0; color: var(--muted); font-size: 15px; }
+    .datebox {
+      min-width: 132px;
+      padding: 14px 16px;
+      border-left: 3px solid var(--brand-brown);
+      background: rgba(255, 255, 255, .62);
+      color: var(--deep-brown);
+      font-weight: 700;
+    }
+    .section {
+      margin-top: 26px;
+      padding-top: 4px;
+    }
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 14px;
+      color: var(--deep-brown);
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+    .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      background: var(--sage-soft);
+      color: var(--sage);
+      font-size: 14px;
+      vertical-align: -2px;
+    }
+    .cards { display: grid; gap: 16px; }
+    .card {
+      padding: 20px 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--cream);
+      box-shadow: 0 10px 24px rgba(77, 56, 40, .06);
+    }
+    .card-head {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .rank {
+      color: var(--gold);
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .label {
+      color: var(--brand-brown);
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .score {
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--sage-soft);
+      color: var(--sage);
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .item-title {
+      display: block;
+      margin: 4px 0 14px;
+      color: var(--blue);
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.45;
+    }
+    .summary {
+      margin: 0 0 14px;
+      color: var(--text);
+      font-size: 15px;
+    }
+    .item-layout {
+      display: grid;
+      gap: 16px;
+    }
+    .item-layout.has-media {
+      grid-template-columns: minmax(0, 1fr) 260px;
+      align-items: start;
+    }
+    .media {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid #e9decf;
+      border-radius: 8px;
+      background: #f6efe5;
+    }
+    .media img {
+      display: block;
+      width: 100%;
+      height: 260px;
+      padding: 12px;
+      object-fit: contain;
+      background: #f6efe5;
+    }
+    .media figcaption {
+      padding: 7px 9px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin: 14px 0;
+    }
+    .meta {
+      min-height: 82px;
+      padding: 12px;
+      border: 1px solid #ece3d7;
+      border-radius: 6px;
+      background: #fffaf1;
+    }
+    .meta b {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--brand-brown);
+      font-size: 13px;
+    }
+    .meta span { color: var(--muted); font-size: 14px; }
+    .observe {
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-left: 3px solid var(--sage);
+      background: #f7f9f2;
+      border-radius: 0 6px 6px 0;
+    }
+    .key-takeaway {
+      border-left-color: var(--brand-brown);
+      background: #fff6e8;
+    }
+    .opportunity {
+      border-left-color: #6f907d;
+      background: #f3f8ef;
+    }
+    .observe b { color: var(--deep-brown); }
+    ul { margin: 8px 0 0; padding-left: 20px; }
+    li { margin: 4px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 8px;
+      background: var(--cream);
+      border: 1px solid var(--line);
+    }
+    th, td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+    }
+    th {
+      color: var(--brand-brown);
+      background: #f5ecdf;
+      font-size: 14px;
+    }
+    tr:last-child td { border-bottom: 0; }
+    .stars { color: var(--gold); letter-spacing: 0; }
+    .focus {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .focus-panel {
+      padding: 18px 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--cream);
+    }
+    .focus-panel h3 {
+      margin: 0;
+      color: var(--brand-brown);
+      font-size: 16px;
+    }
+    .empty {
+      padding: 28px;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      background: rgba(255,255,255,.55);
+      color: var(--muted);
+    }
+    @media (max-width: 720px) {
+      .page { width: min(100% - 20px, 980px); padding-top: 18px; }
+      .hero { grid-template-columns: 1fr; padding: 22px; }
+      h1 { font-size: 24px; }
+      .card-head { grid-template-columns: 1fr auto; }
+      .rank { grid-column: 1 / -1; }
+      .item-layout.has-media { grid-template-columns: 1fr; }
+      .grid, .focus { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div>
+        <div class="kicker">Robud Daily Market Brief</div>
+        <h1>Robud 儿童产品行业日报</h1>
+        <p class="subtitle">从 120 条内容中筛选出 5 条相关优质热点，按业务优先级整理。</p>
+      </div>
+      <div class="datebox">2026-07-23</div>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title"><span class="icon">🔥</span> 今日重点关注（TOP 5）</h2>
+      <div class="cards">
+        
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 1</div>
+            <div class="label">市场趋势</div>
+            <div class="score">信息价值： ⭐️ 8.6/10</div>
+          </div>
+          <a class="item-title" href="https://news.google.com/rss/articles/CBMiVkFVX3lxTFBnTFpwZm9xZ3BjZjI1bVhRN3ZxeVZHQ3c3U2ZBSklxSVdEYnhtTFlmTUhZU05KZk9aTk9Kc09ZVlEtYVJiWFduaUZfdUdGN0hjTE9SWHp3?oc=5" target="_blank" rel="noopener noreferrer">Pantone building in Sharpsburg hits market for $1.35 million, evokes memories - TribLIVE.com</a>
+          <div class="item-layout">
+            <div class="item-copy">
+              <p class="summary">Pantone 相关建筑资产再次引发本地记忆与色彩文化讨论，说明色彩资产仍具备品牌传播和空间联想价值。</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>色彩 / 儿童空间趋势</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>TribLIVE.com</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>色彩趋势不只影响单品外观，也会影响儿童房、游戏房、产品册和电商场景图的整体视觉表达。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>这条信息本身不是儿童玩具新品，但 Pantone 的品牌记忆说明色彩系统可以成为产品识别和空间氛围的重要资产。</li><li>对 Robud 更有价值的是提炼颜色组合、材质搭配和儿童空间落地方式，而不是跟进房产事件本身。</li><li>儿童木质玩具、厨房、娃屋和儿童家具都需要稳定的系列配色，色彩趋势可帮助产品线形成统一陈列感。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>Pantone 相关资产带来色彩话题曝光</li><li>适合延伸到儿童空间配色、产品套系配色和拍摄布景</li><li>可作为季度视觉主题或新品色彩故事的参考信号</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>机会方向：建立 Robud 季度配色板，把奶油白、原木色、柔和绿、低饱和蓝等颜色映射到厨房、娃屋、工具台和儿童家具套系。</li><li>设计注意点：不要只追流行色名称，需要同步验证木材纹理、喷漆色差、摄影布景和页面主图是否形成一致的品牌视觉。</li><li>运营注意点：电商页面可把颜色命名转化为家长容易理解的空间场景词，例如 kids room、playroom、natural wooden style。</li></ul>
+              </div>
+            </div>
+            
+          </div>
+        </article>
+    
+
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 2</div>
+            <div class="label">市场趋势</div>
+            <div class="score">信息价值： ⭐️ 8.8/10</div>
+          </div>
+          <a class="item-title" href="https://toybook.com/hasbro-the-legend-of-zelda-launch/" target="_blank" rel="noopener noreferrer">Hasbro and Nintendo Launch New ‘The Legend of Zelda’ Figures</a>
+          <div class="item-layout has-media">
+            <div class="item-copy">
+              <p class="summary">Hasbro 与 Nintendo 推出 The Legend of Zelda 2027 收藏型人偶系列，核心角色、价格带和预售渠道已经开始释放市场信号。</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>IP 收藏人偶 / 玩具授权</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>The Toy Book</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>欧美玩具品牌继续用 IP 联名、核心角色阵容和预售节奏拉动新品周期，收藏型人偶仍有明确渠道热度。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>IP 联名与收藏型公仔仍是欧美玩具品牌拉动新品周期的重要方式，能同时覆盖粉丝收藏、礼赠和陈列场景。</li><li>Zelda 角色阵容覆盖 Link、Zelda、Ganondorf，说明品牌在新品阶段先用核心角色搭建系列识别，而不是推出零散单品。</li><li>19.99 美元价格带适合形成低门槛收藏和多角色复购，对系列化组合销售有参考价值。</li><li>预售渠道覆盖游戏和收藏品零售商，说明 IP 玩具的首发节奏会同时服务粉丝圈层与礼赠消费。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>6 英寸可动收藏人偶</li><li>Link、Zelda、Ganondorf 三个核心角色形成系列阵容</li><li>GameStop、BigBadToyStore、Entertainment Earth 等渠道开启预售</li><li>单品价格约 19.99 美元</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>机会方向：Robud 可以把厨房、工具台、娃屋、种植箱等强场景产品拆成可连续上新的主题套系，用统一包装和故事线强化陈列感。</li><li>产品注意点：Robud 不适合直接复制授权 IP，但可以学习“角色/主题体系 + 系列包装 + 场景故事”的新品叙事方式。</li><li>运营注意点：建立竞品预售监测表，记录渠道、价格、标题关键词和首批评价，用于判断欧美电商对主题玩具的接受度。</li></ul>
+              </div>
+            </div>
+            
+            <figure class="media">
+              <img src="https://cdn.media.amplience.net/i/hasbropulse/G4515_1?fmt=auto&amp;w=640" alt="Hasbro and Nintendo Launch New ‘The Legend of Zelda’ Figures" loading="lazy">
+              <figcaption>The Toy Book 相关图片</figcaption>
+            </figure>
+        
+          </div>
+        </article>
+    
+
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 3</div>
+            <div class="label">竞品品牌动态</div>
+            <div class="score">信息价值： ⭐️ 8.4/10</div>
+          </div>
+          <a class="item-title" href="https://www.amazon.com/Tiny-Land-Dollhouse-Accessories-Montessori/dp/B0GD6MLD37/ref=sr_1_1?keywords=Tiny+Land+wooden+toys&amp;qid=1784769612&amp;sr=8-1" target="_blank" rel="noopener noreferrer">Wooden Dollhouse Animal Set for Toddlers, Dollhouse Accessories | Dolls House Furniture Sets for Toddlers, Montessori Pretend Play Family Pets Set Toys, Gift for Kids Age 3+</a>
+          <div class="item-layout has-media">
+            <div class="item-copy">
+              <p class="summary">Tiny Land 以娃屋动物配件切入低客单价过家家场景，强化 Montessori、pretend play 和 wooden toy 关键词。</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>娃屋配件 / 角色扮演</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>Tiny Land Amazon</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>Amazon 端竞品用配件包扩展主产品场景，低价 SKU 有助于提升复购、组合购买和礼赠搭配。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>Tiny Land 继续围绕 Montessori、pretend play 和木质玩具布局低客单价配件类 SKU，说明其在做主套装之外的场景补全。</li><li>动物/宠物配件能让娃屋玩法更接近真实家庭生活，适合带动孩子讲故事、照顾宠物和家庭角色扮演。</li><li>低客单价配件的价值不只在单品销量，也在于提升主娃屋、家具套装和礼盒组合的复购空间。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>价格带：$24.99，适合作为娃屋和家具套装的加购配件</li><li>核心卖点：Dollhouse accessories、Montessori、pretend play、wooden toys</li><li>适龄表达：toddlers / kids age 3+</li><li>场景延展：家庭宠物、角色扮演、娃屋家具组合</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>机会方向：Robud 可评估娃屋宠物、家庭成员、节日场景和户外花园等配件包，作为现有娃屋/厨房类产品的组合销售模块。</li><li>产品注意点：配件尺寸、边角、涂装和小零件风险要优先验证，避免 3+ 适龄表达与实际安全边界不一致。</li><li>运营注意点：页面应明确展示配件与哪些 Robud 主产品兼容，提升加购理由，而不是只写 Montessori 和 pretend play 关键词。</li></ul>
+              </div>
+            </div>
+            
+            <figure class="media">
+              <img src="https://www.tinylandus.com/cdn/shop/files/lQDPKH6Ix-YXgJvNBkDNBkCwUaABkIOyr2UJDRkhshq_AQ_1600_1600_640x.webp?v=1764928965" alt="Wooden Dollhouse Animal Set for Toddlers, Dollhouse Accessories | Dolls House Furniture Sets for Toddlers, Montessori Pretend Play Family Pets Set Toys, Gift for Kids Age 3+" loading="lazy">
+              <figcaption>Tiny Land Amazon 相关图片</figcaption>
+            </figure>
+        
+          </div>
+        </article>
+    
+
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 4</div>
+            <div class="label">竞品品牌动态</div>
+            <div class="score">信息价值： ⭐️ 8.0/10</div>
+          </div>
+          <a class="item-title" href="https://www.amazon.com/Tiny-Land-Montessori-Adjustable-Development/dp/B0CPP7HFVY/ref=sr_1_2?keywords=Tiny+Land+wooden+toys&amp;qid=1784769612&amp;sr=8-2" target="_blank" rel="noopener noreferrer">Wooden Baby Walker with Activity Center, Montessori Push Walker | Adjustable speed for beginners, From sitting play to first steps, Sensory hand-on games, Gift for boys &amp; girls, Morandi</a>
+          <div class="item-layout has-media">
+            <div class="item-copy">
+              <p class="summary">Tiny Land 的木质学步车把可调速、活动中心和 Montessori 感官玩法组合在一个高客单功能型 SKU 中。</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>木质学步车 / 感官活动中心</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>Tiny Land Amazon</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>竞品在木质大件产品上强化“成长阶段覆盖”和“多功能活动中心”，用功能密度支撑更高价格带。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>学步车叠加 Activity Center 和 Montessori 表达，体现竞品在高客单功能型木质产品上的卖点组合。</li><li>从坐姿玩到迈步的成长路径表达，比单纯强调“学步车”更容易打动家长，因为它解释了产品使用周期。</li><li>Morandi 配色说明竞品也在弱化传统儿童玩具的高饱和色，向家居融合和礼赠审美靠近。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>价格带：$75.98，明显高于低价配件类 SKU</li><li>功能组合：adjustable speed、push walker、activity center</li><li>成长路径：from sitting play to first steps</li><li>视觉方向：Morandi 低饱和配色</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>机会方向：Robud 可评估“成长阶段型”产品表达，把学步、感官探索、精细动作训练和收纳功能整合成清晰卖点矩阵。</li><li>产品注意点：可调速结构、重心稳定、防后翻和轮子阻尼是高风险点，需要在设计说明、安装视频和详情页中说清楚。</li><li>运营注意点：高客单产品页面要突出使用周期、功能分区和安全结构，不宜只堆 Montessori、sensory 等关键词。</li></ul>
+              </div>
+            </div>
+            
+            <figure class="media">
+              <img src="https://www.tinylandus.com/cdn/shop/files/TLTGBW001MC-1_640x.webp?v=1764842637" alt="Wooden Baby Walker with Activity Center, Montessori Push Walker | Adjustable speed for beginners, From sitting play to first steps, Sensory hand-on games, Gift for boys &amp; girls, Morandi" loading="lazy">
+              <figcaption>Tiny Land Amazon 相关图片</figcaption>
+            </figure>
+        
+          </div>
+        </article>
+    
+
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 5</div>
+            <div class="label">竞品品牌动态</div>
+            <div class="score">信息价值： ⭐️ 7.6/10</div>
+          </div>
+          <a class="item-title" href="https://www.amazon.com/Tiny-Land-Wooden-Egg-Kids/dp/B0F5464TW8/ref=sr_1_3?keywords=Tiny+Land+wooden+toys&amp;qid=1784769612&amp;sr=8-3" target="_blank" rel="noopener noreferrer">Wooden Play Food for Kids Kitchen, Pretend Food Egg Set Toy | 6PCS Fried Egg&amp;Realistic Carton Cutting Set for Kid, Play Kitchen Accessories, Montessori Toy for Boy and Girl</a>
+          <div class="item-layout has-media">
+            <div class="item-copy">
+              <p class="summary">Tiny Land 推出木质鸡蛋食物配件，以 realistic、cutting set、play kitchen accessories 连接厨房过家家主场景。</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>厨房配件 / 木质食物玩具</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>Tiny Land Amazon</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>厨房配件类竞品继续围绕真实食物、切切乐和 Montessori 叙事做细分 SKU，适合带动主厨房套装的组合销售。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>厨房配件继续以 realistic、pretend play、Montessori 作为高频卖点，说明细分食材仍是过家家产品的重要补充方向。</li><li>鸡蛋这类高识别度食物适合儿童理解早餐、厨房流程和切配动作，玩法门槛低，礼赠场景清晰。</li><li>低价食物配件可作为主厨房、收银台、购物篮等产品的搭配 SKU，帮助提升套系丰富度。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>价格带：$22.99，适合作为厨房玩具加购件</li><li>产品结构：6PCS fried egg / carton / cutting set</li><li>关键词：realistic、pretend food、play kitchen accessories、Montessori</li><li>场景价值：早餐、切配、厨房角色扮演</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>机会方向：Robud 可规划早餐、烘焙、蔬果、花园采摘等食物配件小系列，与现有厨房和市场摊位类产品做组合销售。</li><li>产品注意点：切切乐磁吸/魔术贴结构、边角圆润度、涂装耐磨和小件尺寸需要提前做安全验证。</li><li>运营注意点：详情页应展示配件如何与 Robud 厨房形成完整玩法路径，例如“准备食材-切配-烹饪-上菜”。</li></ul>
+              </div>
+            </div>
+            
+            <figure class="media">
+              <img src="https://www.tinylandus.com/cdn/shop/files/1_c5493933-1dbf-46af-ae35-1643cedbb22a_640x.webp?v=1764048372" alt="Wooden Play Food for Kids Kitchen, Pretend Food Egg Set Toy | 6PCS Fried Egg&amp;Realistic Carton Cutting Set for Kid, Play Kitchen Accessories, Montessori Toy for Boy and Girl" loading="lazy">
+              <figcaption>Tiny Land Amazon 相关图片</figcaption>
+            </figure>
+        
+          </div>
+        </article>
+    
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title"><span class="icon">📊</span> 今日市场关键词</h2>
+      <table>
+        <thead><tr><th>方向</th><th>关键词</th><th>Robud 关联</th></tr></thead>
+        <tbody>
+        <tr>
+          <td><span class="icon">🌱</span> 户外</td>
+          <td>Nature Play</td>
+          <td><span class="stars">★★★★★</span></td>
+        </tr>
+        
+
+        <tr>
+          <td><span class="icon">🧩</span> 教育</td>
+          <td>Montessori</td>
+          <td><span class="stars">★★★★</span></td>
+        </tr>
+        
+
+        <tr>
+          <td><span class="icon">🏡</span> 空间</td>
+          <td>Kids Room Solution</td>
+          <td><span class="stars">★★★★</span></td>
+        </tr>
+        
+
+        <tr>
+          <td><span class="icon">🪵</span> 材质</td>
+          <td>Wooden &amp; Sustainable</td>
+          <td><span class="stars">★★★★</span></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title"><span class="icon">🚩</span> 今日 Robud 关注方向</h2>
+      <div class="focus">
+        <div class="focus-panel">
+          <h3><span class="icon">🛠</span> 产品团队</h3>
+          <ul><li>色彩趋势不只影响单品外观，也会影响儿童房、游戏房、产品册和电商场景图的整体视觉表达。</li><li>欧美玩具品牌继续用 IP 联名、核心角色阵容和预售节奏拉动新品周期，收藏型人偶仍有明确渠道热度。</li><li>Amazon 端竞品用配件包扩展主产品场景，低价 SKU 有助于提升复购、组合购买和礼赠搭配。</li></ul>
+        </div>
+        <div class="focus-panel">
+          <h3><span class="icon">🔎</span> 运营团队</h3>
+          <ul><li>Montessori 搜索机会</li><li>Amazon 竞品变化</li><li>用户需求关键词</li></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
