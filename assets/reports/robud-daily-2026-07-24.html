@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robud 儿童产品行业日报 - 2026-07-24</title>
+  <style>
+    :root {
+      --brand-brown: #8a5a36;
+      --deep-brown: #4d3828;
+      --warm-paper: #fbf7ef;
+      --cream: #fffdf8;
+      --sage: #7f9271;
+      --sage-soft: #eef3e8;
+      --blue: #2f6fb3;
+      --line: #e7ddcf;
+      --text: #2f2b27;
+      --muted: #776d62;
+      --gold: #c7902e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--warm-paper);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+      line-height: 1.68;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .page {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 36px 0 54px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: end;
+      padding: 32px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.92), rgba(255,253,248,.86)),
+        repeating-linear-gradient(90deg, rgba(138,90,54,.07) 0, rgba(138,90,54,.07) 1px, transparent 1px, transparent 22px);
+    }
+    .kicker {
+      color: var(--sage);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 8px 0 10px;
+      color: var(--brand-brown);
+      font-size: 30px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+    .subtitle { margin: 0; color: var(--muted); font-size: 15px; }
+    .datebox {
+      min-width: 132px;
+      padding: 14px 16px;
+      border-left: 3px solid var(--brand-brown);
+      background: rgba(255, 255, 255, .62);
+      color: var(--deep-brown);
+      font-weight: 700;
+    }
+    .section {
+      margin-top: 26px;
+      padding-top: 4px;
+    }
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 14px;
+      color: var(--deep-brown);
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+    .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      background: var(--sage-soft);
+      color: var(--sage);
+      font-size: 14px;
+      vertical-align: -2px;
+    }
+    .cards { display: grid; gap: 16px; }
+    .card {
+      padding: 20px 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--cream);
+      box-shadow: 0 10px 24px rgba(77, 56, 40, .06);
+    }
+    .card-head {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .rank {
+      color: var(--gold);
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .label {
+      color: var(--brand-brown);
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .score {
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--sage-soft);
+      color: var(--sage);
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .item-title {
+      display: block;
+      margin: 4px 0 14px;
+      color: var(--blue);
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 1.45;
+    }
+    .summary {
+      margin: 0 0 14px;
+      color: var(--text);
+      font-size: 15px;
+    }
+    .item-layout {
+      display: grid;
+      gap: 16px;
+    }
+    .item-layout.has-media {
+      grid-template-columns: minmax(0, 1fr) 260px;
+      align-items: start;
+    }
+    .media {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid #e9decf;
+      border-radius: 8px;
+      background: #f6efe5;
+    }
+    .media img {
+      display: block;
+      width: 100%;
+      height: 260px;
+      padding: 12px;
+      object-fit: contain;
+      background: #f6efe5;
+    }
+    .media figcaption {
+      padding: 7px 9px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin: 14px 0;
+    }
+    .meta {
+      min-height: 82px;
+      padding: 12px;
+      border: 1px solid #ece3d7;
+      border-radius: 6px;
+      background: #fffaf1;
+    }
+    .meta b {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--brand-brown);
+      font-size: 13px;
+    }
+    .meta span { color: var(--muted); font-size: 14px; }
+    .observe {
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-left: 3px solid var(--sage);
+      background: #f7f9f2;
+      border-radius: 0 6px 6px 0;
+    }
+    .key-takeaway {
+      border-left-color: var(--brand-brown);
+      background: #fff6e8;
+    }
+    .opportunity {
+      border-left-color: #6f907d;
+      background: #f3f8ef;
+    }
+    .observe b { color: var(--deep-brown); }
+    ul { margin: 8px 0 0; padding-left: 20px; }
+    li { margin: 4px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 8px;
+      background: var(--cream);
+      border: 1px solid var(--line);
+    }
+    th, td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+    }
+    th {
+      color: var(--brand-brown);
+      background: #f5ecdf;
+      font-size: 14px;
+    }
+    tr:last-child td { border-bottom: 0; }
+    .stars { color: var(--gold); letter-spacing: 0; }
+    .focus {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .focus-panel {
+      padding: 18px 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--cream);
+    }
+    .focus-panel h3 {
+      margin: 0;
+      color: var(--brand-brown);
+      font-size: 16px;
+    }
+    .empty {
+      padding: 28px;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      background: rgba(255,255,255,.55);
+      color: var(--muted);
+    }
+    @media (max-width: 720px) {
+      .page { width: min(100% - 20px, 980px); padding-top: 18px; }
+      .hero { grid-template-columns: 1fr; padding: 22px; }
+      h1 { font-size: 24px; }
+      .card-head { grid-template-columns: 1fr auto; }
+      .rank { grid-column: 1 / -1; }
+      .item-layout.has-media { grid-template-columns: 1fr; }
+      .grid, .focus { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div>
+        <div class="kicker">Robud Daily Market Brief</div>
+        <h1>Robud 儿童产品行业日报</h1>
+        <p class="subtitle">从 106 条内容中筛选出 5 条相关优质热点，按业务优先级整理。</p>
+      </div>
+      <div class="datebox">2026-07-24</div>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title"><span class="icon">🔥</span> 今日重点关注（TOP 5）</h2>
+      <div class="cards">
+        
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 1</div>
+            <div class="label">市场趋势</div>
+            <div class="score">信息价值： ⭐️ 8.0/10</div>
+          </div>
+          <a class="item-title" href="https://toybook.com/batman-caped-crusader-game-news/" target="_blank" rel="noopener noreferrer">SDCC: Amazon Luna To Launch ‘Batman: Caped Crusader’ Game</a>
+          <div class="item-layout">
+            <div class="item-copy">
+              <p class="summary">Amazon Luna will launch a digital game tied to Season 2 of &#x27;Batman: Caped Crusader&#x27; on July 31.</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>toy-industry</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>The Toy Book</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>欧美儿童玩具、家具或户外玩法市场出现趋势信号。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>该热点反映儿童产品市场在主题、场景或渠道表达上的变化。</li><li>建议结合品类相关度、用户需求强度和可转化产品方向继续跟踪。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>欧美儿童玩具、家具或户外玩法市场出现趋势信号。</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>机会方向：把该热点映射到具体品类、使用场景、价格带和用户痛点，再判断是否进入 Robud 产品或内容规划。</li><li>注意点：若缺少销量、渠道或用户反馈证据，应先列入观察池，不宜直接作为新品立项依据。</li></ul>
+              </div>
+            </div>
+            
+          </div>
+        </article>
+    
+
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 2</div>
+            <div class="label">市场趋势</div>
+            <div class="score">信息价值： ⭐️ 8.0/10</div>
+          </div>
+          <a class="item-title" href="https://toybook.com/ravensburger-returns-to-gen-con-with-lorcana-villainous-and-new-games/" target="_blank" rel="noopener noreferrer">Ravensburger Returns to Gen Con with Lorcana, Villainous, and New Games</a>
+          <div class="item-layout">
+            <div class="item-copy">
+              <p class="summary">Ravensburger will return as a Gen Con co-sponsor with Disney Lorcana, Villainous, new game demos, tournaments, early-access releases, and exclusive merchandise.</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>toy-industry</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>The Toy Book</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>欧美儿童玩具、家具或户外玩法市场出现趋势信号。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>该热点反映儿童产品市场在主题、场景或渠道表达上的变化。</li><li>建议结合品类相关度、用户需求强度和可转化产品方向继续跟踪。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>欧美儿童玩具、家具或户外玩法市场出现趋势信号。</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>机会方向：把该热点映射到具体品类、使用场景、价格带和用户痛点，再判断是否进入 Robud 产品或内容规划。</li><li>注意点：若缺少销量、渠道或用户反馈证据，应先列入观察池，不宜直接作为新品立项依据。</li></ul>
+              </div>
+            </div>
+            
+          </div>
+        </article>
+    
+
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 3</div>
+            <div class="label">市场趋势</div>
+            <div class="score">信息价值： ⭐️ 8.0/10</div>
+          </div>
+          <a class="item-title" href="https://toybook.com/hasbro-kpop-demon-hunters-interactive-sword-launch/" target="_blank" rel="noopener noreferrer">Hasbro Debuts Interactive ‘KPop Demon Hunters’ Sword at SDCC</a>
+          <div class="item-layout">
+            <div class="item-copy">
+              <p class="summary">Hasbro debuted an interactive sword toy tied to &#x27;KPop Demon Hunters&#x27; at San Diego Comic-Con.</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>toy-industry</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>The Toy Book</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>欧美儿童玩具、家具或户外玩法市场出现趋势信号。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>IP 联名与收藏型公仔仍是欧美玩具品牌拉动新品周期的重要方式。</li><li>可观察角色体系、系列包装和预售节奏如何共同强化粉丝收藏场景。</li><li>对 Robud 的参考点不是复制 IP，而是学习“场景故事 + 系列化产品 + 陈列包装”的叙事方式。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>欧美儿童玩具、家具或户外玩法市场出现趋势信号。</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>机会方向：Robud 可以把现有厨房、工具台、娃屋等强场景产品拆成可连续上新的主题套系，用统一包装和故事线强化陈列感。</li><li>运营注意点：授权 IP 类玩具依赖粉丝资产，Robud 更适合借鉴系列化表达和预售节奏，避免直接使用受保护角色、造型或名称。</li></ul>
+              </div>
+            </div>
+            
+          </div>
+        </article>
+    
+
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 4</div>
+            <div class="label">市场趋势</div>
+            <div class="score">信息价值： ⭐️ 7.4/10</div>
+          </div>
+          <a class="item-title" href="https://globaltoynews.com/2026/07/23/from-youtube-to-the-toy-aisle-toys-and-colors-launches-first-ever-toy-line/" target="_blank" rel="noopener noreferrer">From YouTube to the Toy Aisle: Toys and Colors Launches First-Ever Toy Line</a>
+          <div class="item-layout">
+            <div class="item-copy">
+              <p class="summary">Toys and Colors is launching its first-ever physical toy line, extending the children&#x27;s YouTube brand into the toy aisle.</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>toy-industry</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>Global Toy News</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>欧美儿童玩具、家具或户外玩法市场出现趋势信号。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>视觉趋势可转化为儿童房、游戏房和产品套系的配色参考。</li><li>建议关注色彩故事、空间陈列和材质搭配是否能增强 Robud 的系列识别度。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>欧美儿童玩具、家具或户外玩法市场出现趋势信号。</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>机会方向：将色彩信号落到 Robud 儿童房、游戏房和过家家套系的配色方案，形成可复用的季度视觉主题。</li><li>设计注意点：颜色不能只停留在流行色命名，需要验证木质材料、喷漆工艺、拍摄布景和页面视觉是否一致。</li></ul>
+              </div>
+            </div>
+            
+          </div>
+        </article>
+    
+
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 5</div>
+            <div class="label">市场趋势</div>
+            <div class="score">信息价值： ⭐️ 7.4/10</div>
+          </div>
+          <a class="item-title" href="https://globaltoynews.com/2026/07/23/maestro-media-brings-award-winning-ghost-blitz-to-north-america-in-new-partnership-with-zoch-verlag/" target="_blank" rel="noopener noreferrer">Maestro Media Brings Award-Winning Ghost Blitz to North America in New Partnership with Zoch Verlag</a>
+          <div class="item-layout">
+            <div class="item-copy">
+              <p class="summary">Maestro Media has partnered with Zoch Verlag to bring the award-winning Ghost Blitz game to the North American market.</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>toy-industry</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>Global Toy News</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>欧美儿童玩具、家具或户外玩法市场出现趋势信号。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>该热点反映儿童产品市场在主题、场景或渠道表达上的变化。</li><li>建议结合品类相关度、用户需求强度和可转化产品方向继续跟踪。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>欧美儿童玩具、家具或户外玩法市场出现趋势信号。</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>机会方向：把该热点映射到具体品类、使用场景、价格带和用户痛点，再判断是否进入 Robud 产品或内容规划。</li><li>注意点：若缺少销量、渠道或用户反馈证据，应先列入观察池，不宜直接作为新品立项依据。</li></ul>
+              </div>
+            </div>
+            
+          </div>
+        </article>
+    
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title"><span class="icon">📊</span> 今日市场关键词</h2>
+      <table>
+        <thead><tr><th>方向</th><th>关键词</th><th>Robud 关联</th></tr></thead>
+        <tbody>
+        <tr>
+          <td><span class="icon">🌱</span> 户外</td>
+          <td>Nature Play</td>
+          <td><span class="stars">★★★★★</span></td>
+        </tr>
+        
+
+        <tr>
+          <td><span class="icon">🧩</span> 教育</td>
+          <td>Montessori</td>
+          <td><span class="stars">★★★★</span></td>
+        </tr>
+        
+
+        <tr>
+          <td><span class="icon">🏡</span> 空间</td>
+          <td>Kids Room Solution</td>
+          <td><span class="stars">★★★★</span></td>
+        </tr>
+        
+
+        <tr>
+          <td><span class="icon">🪵</span> 材质</td>
+          <td>Wooden &amp; Sustainable</td>
+          <td><span class="stars">★★★★</span></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title"><span class="icon">🚩</span> 今日 Robud 关注方向</h2>
+      <div class="focus">
+        <div class="focus-panel">
+          <h3><span class="icon">🛠</span> 产品团队</h3>
+          <ul><li>复盘风险结构、警示标签、零件尺寸和稳定性设计。</li><li>关注高频色彩、配色组合、儿童房/游戏房落地场景，并转化为新品视觉方向。</li><li>跟踪品类、卖点和用户语言，沉淀为产品定义参考。</li></ul>
+        </div>
+        <div class="focus-panel">
+          <h3><span class="icon">🔎</span> 运营团队</h3>
+          <ul><li>Montessori 搜索机会</li><li>Amazon 竞品变化</li><li>用户需求关键词</li></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
