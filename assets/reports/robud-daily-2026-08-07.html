@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robud 儿童产品行业日报 - 2026-08-07</title>
+  <style>
+    :root {
+      --brand-brown: #8a5a36;
+      --deep-brown: #4d3828;
+      --warm-paper: #fbf7ef;
+      --cream: #fffdf8;
+      --sage: #7f9271;
+      --sage-soft: #eef3e8;
+      --blue: #2f6fb3;
+      --line: #e7ddcf;
+      --text: #2f2b27;
+      --muted: #776d62;
+      --gold: #c7902e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--warm-paper);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+      line-height: 1.68;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .page {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 36px 0 54px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: end;
+      padding: 32px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.92), rgba(255,253,248,.86)),
+        repeating-linear-gradient(90deg, rgba(138,90,54,.07) 0, rgba(138,90,54,.07) 1px, transparent 1px, transparent 22px);
+    }
+    .kicker {
+      color: var(--sage);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 8px 0 10px;
+      color: var(--brand-brown);
+      font-size: 30px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+    .subtitle { margin: 0; color: var(--muted); font-size: 15px; }
+    .datebox {
+      min-width: 132px;
+      padding: 14px 16px;
+      border-left: 3px solid var(--brand-brown);
+      background: rgba(255, 255, 255, .62);
+      color: var(--deep-brown);
+      font-weight: 700;
+    }
+    .section {
+      margin-top: 26px;
+      padding-top: 4px;
+    }
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 14px;
+      color: var(--deep-brown);
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+    .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      background: var(--sage-soft);
+      color: var(--sage);
+      font-size: 14px;
+      vertical-align: -2px;
+    }
+    .cards { display: grid; gap: 16px; }
+    .card {
+      padding: 20px 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--cream);
+      box-shadow: 0 10px 24px rgba(77, 56, 40, .06);
+    }
+    .card-head {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .rank {
+      color: var(--gold);
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .label {
+      color: var(--brand-brown);
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .score {
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--sage-soft);
+      color: var(--sage);
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .item-title {
+      display: block;
+      margin: 4px 0 14px;
+      color: var(--blue);
+      font-weight: 800;
+      line-height: 1.45;
+    }
+    .item-title-en { display: block; font-size: 18px; }
+    .item-title-zh {
+      display: block;
+      margin-top: 4px;
+      color: var(--deep-brown);
+      font-size: 14px;
+      font-weight: 650;
+    }
+    .summary {
+      margin: 0 0 14px;
+      color: var(--text);
+      font-size: 15px;
+    }
+    .item-layout {
+      display: grid;
+      gap: 16px;
+    }
+    .item-layout.has-media {
+      grid-template-columns: minmax(0, 1fr) 260px;
+      align-items: start;
+    }
+    .media {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid #e9decf;
+      border-radius: 8px;
+      background: #f6efe5;
+    }
+    .media img {
+      display: block;
+      width: 100%;
+      height: 260px;
+      padding: 12px;
+      object-fit: contain;
+      background: #f6efe5;
+    }
+    .media figcaption {
+      padding: 7px 9px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin: 14px 0;
+    }
+    .meta {
+      min-height: 82px;
+      padding: 12px;
+      border: 1px solid #ece3d7;
+      border-radius: 6px;
+      background: #fffaf1;
+    }
+    .meta b {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--brand-brown);
+      font-size: 13px;
+    }
+    .meta span { color: var(--muted); font-size: 14px; }
+    .observe {
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-left: 3px solid var(--sage);
+      background: #f7f9f2;
+      border-radius: 0 6px 6px 0;
+    }
+    .key-takeaway {
+      border-left-color: var(--brand-brown);
+      background: #fff6e8;
+    }
+    .opportunity {
+      border-left-color: #6f907d;
+      background: #f3f8ef;
+    }
+    .observe b { color: var(--deep-brown); }
+    ul { margin: 8px 0 0; padding-left: 20px; }
+    li { margin: 4px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 8px;
+      background: var(--cream);
+      border: 1px solid var(--line);
+    }
+    th, td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+    }
+    th {
+      color: var(--brand-brown);
+      background: #f5ecdf;
+      font-size: 14px;
+    }
+    tr:last-child td { border-bottom: 0; }
+    .stars { color: var(--gold); letter-spacing: 0; }
+    .focus {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .focus-panel {
+      padding: 18px 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--cream);
+    }
+    .focus-panel h3 {
+      margin: 0;
+      color: var(--brand-brown);
+      font-size: 16px;
+    }
+    .empty {
+      padding: 28px;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      background: rgba(255,255,255,.55);
+      color: var(--muted);
+    }
+    @media (max-width: 720px) {
+      .page { width: min(100% - 20px, 980px); padding-top: 18px; }
+      .hero { grid-template-columns: 1fr; padding: 22px; }
+      h1 { font-size: 24px; }
+      .card-head { grid-template-columns: 1fr auto; }
+      .rank { grid-column: 1 / -1; }
+      .item-layout.has-media { grid-template-columns: 1fr; }
+      .grid, .focus { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div>
+        <div class="kicker">Robud Daily Market Brief</div>
+        <h1>Robud 儿童产品行业日报</h1>
+        <p class="subtitle">从 126 条内容中筛选出 3 条相关优质热点，按业务优先级整理。</p>
+      </div>
+      <div class="datebox">2026-08-07</div>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title"><span class="icon">🔥</span> 今日重点关注（TOP 5）</h2>
+      <div class="cards">
+        
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 1</div>
+            <div class="label">市场趋势</div>
+            <div class="score">信息价值： ⭐️ 8.5/10</div>
+          </div>
+          <a class="item-title" href="https://toybook.com/wildbrain-kids-preferred-strawberry-shortcake-plush-collection-launch/" target="_blank" rel="noopener noreferrer">
+            <span class="item-title-en">Kids Preferred and WildBrain Collaborate for Strawberry Shortcake Plush</span>
+            <span class="item-title-zh">Kids Preferred 与 WildBrain 合作推出《草莓甜心》毛绒玩具</span>
+          </a>
+          <div class="item-layout has-media">
+            <div class="item-copy">
+              <p class="summary">Kids Preferred 与 WildBrain 达成授权合作，将于 2027 年推出包含草莓甜心及其“Berry Besties”伙伴角色的毛绒玩具系列。</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>toy-industry</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>The Toy Book</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>WildBrain 正通过 Kids Preferred 把自 1970 年延续至今的 Strawberry Shortcake IP 扩展到 2027 年毛绒玩具品类，并以“安抚陪伴、感官探索和想象力游戏”作为产品卖点，显示经典跨代 IP 仍被用于连接儿童用户与怀旧家庭消费者。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>Kids Preferred 与 WildBrain 新签授权合作，确定在 2027 年推出 Strawberry Shortcake 毛绒系列，角色范围包括草莓甜心本人及“Berry Besties”。</li><li>现有证据仅来自 WildBrain、Kids Preferred 及 The Toy Book 的发布信息，已明确产品形态、IP 角色和 2027 年上市时间，但未披露 SKU 数量、年龄分级、尺寸、面料、填充物、价格或具体零售商。</li><li>应按季度检查 Kids Preferred 产品目录、WildBrain 消费品授权公告及主要玩具零售商上架页，记录首批 SKU 数、建议零售价、渠道覆盖、年龄标识和消费者评价量，以判断该系列的实际商业规模。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>产品采用“经典角色主角＋伙伴角色群”的可收集毛绒系列形态，同时覆盖睡眠或安抚陪伴、触觉感官探索与角色扮演场景。</li><li>品牌传播把柔软毛绒与 kindness、friendship、comfort 等情感叙事绑定，但来源尚未提供触感结构、材料认证、可洗性、安全年龄或价格带，暂不能验证其感官设计差异化。</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>Robud 可针对 3—8 岁家庭策划一组不依赖授权 IP 的“角色伙伴＋情景空间”产品或内容方案，例如让自有木制玩偶屋、厨房或商店场景与柔软角色配件形成安抚陪伴和想象游戏组合，并在 2027 年上市前测试家庭对角色套装与单角色产品的偏好。</li><li>需验证毛绒与木制场景跨品类组合是否能提高客单价和复购率；可通过自有站 A/B 测试、用户访谈及 Kids Preferred 后续零售页面核对价格、年龄分级、SKU 规模和评论表现，同时评估毛绒材料合规、清洗维护及小部件风险。</li></ul>
+              </div>
+            </div>
+            
+            <figure class="media">
+              <img src="https://toybook.com/wp-content/uploads/sites/4/2026/08/kidspreferred_wildbrain_strawberryshortcake.jpg?v=1786067586" alt="Kids Preferred and WildBrain Collaborate for Strawberry Shortcake Plush" loading="lazy">
+              <figcaption>The Toy Book 相关图片</figcaption>
+            </figure>
+        
+          </div>
+        </article>
+    
+
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 2</div>
+            <div class="label">市场趋势</div>
+            <div class="score">信息价值： ⭐️ 8.0/10</div>
+          </div>
+          <a class="item-title" href="https://globaltoynews.com/2026/08/06/board-games-become-a-premium-growth-category-as-adult-players-drive-demand/" target="_blank" rel="noopener noreferrer">
+            <span class="item-title-en">Board Games Become a Premium Growth Category as Adult Players Drive Demand</span>
+            <span class="item-title-zh">成人玩家推动需求，桌游成为高端增长品类</span>
+          </a>
+          <div class="item-layout has-media">
+            <div class="item-copy">
+              <p class="summary">据 Arizton 数据，全球桌游市场预计从 2025 年的 215 亿美元增长至 2031 年的 394.6 亿美元，成人玩家和高端、策略型、高重玩价值产品成为主要增长动力。</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>toy-industry</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>Global Toy News</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>桌游正在从以家庭和儿童为主的季节性礼品品类，扩展为面向成人爱好者的全年消费品类：2025 年全球市场规模为 215 亿美元，预计 2031 年达到 394.6 亿美元，10.65%的年复合增长由高端策略游戏、集换式卡牌、收藏版、扩展包、咖啡馆体验和游戏展会等渠道共同支撑。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>具体变化是成人玩家成为增长驱动，市场需求从传统家庭桌游转向高端策略游戏、集换式卡牌、爱好者游戏和收藏体验；同时，厂商通过扩展包、授权 IP、伴侣应用和社区活动延长产品生命周期。</li><li>证据包括 Arizton 预测的 215 亿美元至 394.6 亿美元市场增长、Hasbro Monopoly App Banking 案例，以及 SPIEL Essen 2025 的 948 家展商、50 个国家、22 万名观众和 1716 款新品；下一步应按季度跟踪 Arizton 或其他第三方市场报告、主要桌游品牌新品中扩展包和数字功能的占比，并按年度复核 SPIEL 参展商、观众和新品数量。</li><li>渠道变化包括 Draughts London 经营超过 1000 款精选游戏，以及桌游进入咖啡馆、课堂、旅行和社区活动；应按季度追踪桌游咖啡馆门店数、体验式零售 SKU 数量、展会现场首发产品和教育渠道采购案例，以验证体验渠道是否转化为持续销售。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>产品形态正向高端化和可持续扩展转变：策略桌游、集换式卡牌、特别版、拼图和扩展包强调更高制作价值、重玩性和收藏属性，主要面向成人爱好者及家庭社交场景。</li><li>数字伴侣工具正在与实体桌游结合；Hasbro 的 Monopoly App Banking 显示，应用可简化规则和设置流程，并可能提升年轻玩家及休闲玩家对实体游戏的接受度，但来源未提供该功能的销量、价格或用户留存数据。</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>Robud 可开发面向 5-12 岁儿童及亲子家庭的模块化木质桌游套装：采用可收纳的实体棋盘、可替换任务或扩展组件、清晰的低文字规则和合作式玩法，并为家长或教师提供可选的数字计分、规则演示和课堂活动内容，优先测试家庭游戏夜、学校及儿童体验零售渠道。</li><li>需要验证成人高端桌游增长是否会传导至儿童及家庭细分市场：应先通过家长访谈、儿童试玩、零售商反馈和小规模 A/B 测试比较基础套装与扩展包的购买率、重复游玩率、每局完成率、合理价格带及零件安全风险；来源没有儿童年龄分层、具体售价、销量或用户评价，不能直接据此确定产品规模。</li></ul>
+              </div>
+            </div>
+            
+            <figure class="media">
+              <img src="https://globaltoynews.com/wp-content/uploads/2026/08/asd-1.jpg" alt="Board Games Become a Premium Growth Category as Adult Players Drive Demand" loading="lazy">
+              <figcaption>Global Toy News 相关图片</figcaption>
+            </figure>
+        
+          </div>
+        </article>
+    
+
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 3</div>
+            <div class="label">Amazon 产品雷达</div>
+            <div class="score">信息价值： ⭐️ 8.6/10</div>
+          </div>
+          <a class="item-title" href="https://www.amazon.com/Melissa-Doug-Scoop-Magnetic-Pretend/dp/B004JLNUZI" target="_blank" rel="noopener noreferrer">
+            <span class="item-title-en">Melissa &amp; Doug Scoop and Stack Ice Cream Playset, Magnetic Wooden Toys &amp; Pretend Play Kitchen Accessories, Preschool Learning Toys for Girls &amp; Boys 3+ - FSC Certified</span>
+            <span class="item-title-zh">Melissa &amp; Doug 舀取叠放冰淇淋玩具套装——磁吸木制玩具与假装游戏厨房配件，适合 3 岁以上男女孩的学前学习玩具，FSC 认证</span>
+          </a>
+          <div class="item-layout has-media">
+            <div class="item-copy">
+              <p class="summary">在 Amazon“wooden play kitchen kids”搜索结果快照中，Melissa &amp; Doug FSC 认证磁吸木制冰淇淋套装位列第 5，售价 20.99 美元，评分 4.8 分并累计 7400 条评论。</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>wooden-play-kitchen-hot-us</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>Amazon Radar</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>Melissa &amp; Doug 以 20.99 美元的价格，将磁吸舀取机制、4 个冰淇淋球、2 个木制甜筒和收纳桶组合成 3 岁以上木制角色扮演套装，并在 Amazon 相关搜索中排第 5，显示“木制食物＋动作机关＋收纳＋低于 25 美元”具备较强的电商可见度和评论积累。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>最新可见变化是该商品在 Amazon“wooden play kitchen kids”查询快照中排名第 5，当前标价 20.99 美元，评分 4.8 分、评论量 7400 条，并明确标注 FSC 认证。</li><li>现有证据仅为单次商品页快照，尚不能证明销量增长或排名上升；应每周记录该关键词下的自然排名、价格、优惠券、配送方、库存状态和评论增量，并通过 Amazon Brand Analytics 或第三方关键词工具核验搜索份额与估算销量。</li><li>商品页把精细动作、计数、排序、交流和故事表达作为卖点，但未提供评论主题或退货数据；应按月抽样最新 100 条已验证购买评论，统计磁吸强度、漆面耐久、零件尺寸、收纳便利性及 3 岁儿童操作难度等高频反馈。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>明确的产品趋势信号是“磁吸互动木制食物”：儿童用磁吸冰淇淋勺完成舀取、叠放和售卖，适用于家庭玩具厨房、冰淇淋店角色扮演及多人社交游戏。</li><li>该套装面向 3 岁以上儿童，采用 FSC 认证木制部件并配置专用收纳桶，20.99 美元价格带表明紧凑型厨房配件可作为低门槛礼物或大型玩具厨房的附加购商品。</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>Robud 可开发或强化一款 19.99 至 24.99 美元的 FSC 木制磁吸甜品店配件包，加入可舀取叠放的冰淇淋、甜筒、菜单/点单卡和一体式收纳，并在 Amazon 标题与图片中突出“3+、磁吸动作、精细动作、角色扮演、适配木制厨房”。</li><li>在立项前需验证第 5 名是否为稳定自然排名，以及 7400 条评论对应的真实购买周期；同时应通过竞品评论、CPSC 数据库和 ASTM F963 合规测试核查磁体封装、零件尺寸、涂层耐久及磁体脱落风险，当前来源未提供这些安全与质量证据。</li></ul>
+              </div>
+            </div>
+            
+            <figure class="media">
+              <img src="https://m.media-amazon.com/images/G/01/social_share/amazon_logo._CB635397845_.png" alt="Melissa &amp; Doug Scoop and Stack Ice Cream Playset, Magnetic Wooden Toys &amp; Pretend Play Kitchen Accessories, Preschool Learning Toys for Girls &amp; Boys 3+ - FSC Certified" loading="lazy">
+              <figcaption>Amazon Radar 相关图片</figcaption>
+            </figure>
+        
+          </div>
+        </article>
+    
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title"><span class="icon">📊</span> 今日市场关键词</h2>
+      <table>
+        <thead><tr><th>方向</th><th>关键词</th><th>Robud 关联</th></tr></thead>
+        <tbody>
+        <tr>
+          <td><span class="icon">🌱</span> 户外</td>
+          <td>Nature Play</td>
+          <td><span class="stars">★★★★★</span></td>
+        </tr>
+        
+
+        <tr>
+          <td><span class="icon">🧩</span> 教育</td>
+          <td>Montessori</td>
+          <td><span class="stars">★★★★</span></td>
+        </tr>
+        
+
+        <tr>
+          <td><span class="icon">🏡</span> 空间</td>
+          <td>Kids Room Solution</td>
+          <td><span class="stars">★★★★</span></td>
+        </tr>
+        
+
+        <tr>
+          <td><span class="icon">🪵</span> 材质</td>
+          <td>Wooden &amp; Sustainable</td>
+          <td><span class="stars">★★★★</span></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title"><span class="icon">🚩</span> 今日 Robud 关注方向</h2>
+      <div class="focus">
+        <div class="focus-panel">
+          <h3><span class="icon">🛠</span> 产品团队</h3>
+          <ul><li>跟踪品类、卖点和用户语言，沉淀为产品定义参考。</li><li>关注木质材料、分龄教育价值和 Montessori 叙事。</li></ul>
+        </div>
+        <div class="focus-panel">
+          <h3><span class="icon">🔎</span> 运营团队</h3>
+          <ul><li>Montessori 搜索机会</li><li>Amazon 竞品变化</li><li>用户需求关键词</li></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
