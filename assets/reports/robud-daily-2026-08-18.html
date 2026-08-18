@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robud 儿童产品行业日报 - 2026-08-18</title>
+  <style>
+    :root {
+      --brand-brown: #8a5a36;
+      --deep-brown: #4d3828;
+      --warm-paper: #fbf7ef;
+      --cream: #fffdf8;
+      --sage: #7f9271;
+      --sage-soft: #eef3e8;
+      --blue: #2f6fb3;
+      --line: #e7ddcf;
+      --text: #2f2b27;
+      --muted: #776d62;
+      --gold: #c7902e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--warm-paper);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+      line-height: 1.68;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .page {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 36px 0 54px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: end;
+      padding: 32px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.92), rgba(255,253,248,.86)),
+        repeating-linear-gradient(90deg, rgba(138,90,54,.07) 0, rgba(138,90,54,.07) 1px, transparent 1px, transparent 22px);
+    }
+    .kicker {
+      color: var(--sage);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 8px 0 10px;
+      color: var(--brand-brown);
+      font-size: 30px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+    .subtitle { margin: 0; color: var(--muted); font-size: 15px; }
+    .datebox {
+      min-width: 132px;
+      padding: 14px 16px;
+      border-left: 3px solid var(--brand-brown);
+      background: rgba(255, 255, 255, .62);
+      color: var(--deep-brown);
+      font-weight: 700;
+    }
+    .section {
+      margin-top: 26px;
+      padding-top: 4px;
+    }
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 14px;
+      color: var(--deep-brown);
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+    .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      background: var(--sage-soft);
+      color: var(--sage);
+      font-size: 14px;
+      vertical-align: -2px;
+    }
+    .cards { display: grid; gap: 16px; }
+    .card {
+      padding: 20px 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--cream);
+      box-shadow: 0 10px 24px rgba(77, 56, 40, .06);
+    }
+    .card-head {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .rank {
+      color: var(--gold);
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .label {
+      color: var(--brand-brown);
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .score {
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--sage-soft);
+      color: var(--sage);
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .item-title {
+      display: block;
+      margin: 4px 0 14px;
+      color: var(--blue);
+      font-weight: 800;
+      line-height: 1.45;
+    }
+    .item-title-en { display: block; font-size: 18px; }
+    .item-title-zh {
+      display: block;
+      margin-top: 4px;
+      color: var(--deep-brown);
+      font-size: 14px;
+      font-weight: 650;
+    }
+    .summary {
+      margin: 0 0 14px;
+      color: var(--text);
+      font-size: 15px;
+    }
+    .item-layout {
+      display: grid;
+      gap: 16px;
+    }
+    .item-layout.has-media {
+      grid-template-columns: minmax(0, 1fr) 260px;
+      align-items: start;
+    }
+    .media {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid #e9decf;
+      border-radius: 8px;
+      background: #f6efe5;
+    }
+    .media img {
+      display: block;
+      width: 100%;
+      height: 260px;
+      padding: 12px;
+      object-fit: contain;
+      background: #f6efe5;
+    }
+    .media figcaption {
+      padding: 7px 9px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin: 14px 0;
+    }
+    .meta {
+      min-height: 82px;
+      padding: 12px;
+      border: 1px solid #ece3d7;
+      border-radius: 6px;
+      background: #fffaf1;
+    }
+    .meta b {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--brand-brown);
+      font-size: 13px;
+    }
+    .meta span { color: var(--muted); font-size: 14px; }
+    .observe {
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-left: 3px solid var(--sage);
+      background: #f7f9f2;
+      border-radius: 0 6px 6px 0;
+    }
+    .key-takeaway {
+      border-left-color: var(--brand-brown);
+      background: #fff6e8;
+    }
+    .opportunity {
+      border-left-color: #6f907d;
+      background: #f3f8ef;
+    }
+    .observe b { color: var(--deep-brown); }
+    ul { margin: 8px 0 0; padding-left: 20px; }
+    li { margin: 4px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 8px;
+      background: var(--cream);
+      border: 1px solid var(--line);
+    }
+    th, td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+    }
+    th {
+      color: var(--brand-brown);
+      background: #f5ecdf;
+      font-size: 14px;
+    }
+    tr:last-child td { border-bottom: 0; }
+    .stars { color: var(--gold); letter-spacing: 0; }
+    .focus {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .focus-panel {
+      padding: 18px 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--cream);
+    }
+    .focus-panel h3 {
+      margin: 0;
+      color: var(--brand-brown);
+      font-size: 16px;
+    }
+    .empty {
+      padding: 28px;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      background: rgba(255,255,255,.55);
+      color: var(--muted);
+    }
+    @media (max-width: 720px) {
+      .page { width: min(100% - 20px, 980px); padding-top: 18px; }
+      .hero { grid-template-columns: 1fr; padding: 22px; }
+      h1 { font-size: 24px; }
+      .card-head { grid-template-columns: 1fr auto; }
+      .rank { grid-column: 1 / -1; }
+      .item-layout.has-media { grid-template-columns: 1fr; }
+      .grid, .focus { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div>
+        <div class="kicker">Robud Daily Market Brief</div>
+        <h1>Robud 儿童产品行业日报</h1>
+        <p class="subtitle">从 114 条内容中筛选出 4 条相关优质热点，按业务优先级整理。</p>
+      </div>
+      <div class="datebox">2026-08-18</div>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title"><span class="icon">🔥</span> 今日重点关注（TOP 5）</h2>
+      <div class="cards">
+        
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 1</div>
+            <div class="label">竞品品牌动态</div>
+            <div class="score">信息价值： ⭐️ 6.4/10</div>
+          </div>
+          <a class="item-title" href="https://www.gov.uk/product-safety-alerts-reports-recalls/product-recall-asda-hapello-power-train-2608-0111" target="_blank" rel="noopener noreferrer">
+            <span class="item-title-en">Product Recall: ASDA Hapello Power Train (2608-0111)</span>
+            <span class="item-title-zh">产品召回：ASDA Hapello 动力火车（2608-0111）</span>
+          </a>
+          <div class="item-layout has-media">
+            <div class="item-copy">
+              <p class="summary">ASDA 已召回 2024 年 8 月至 2026 年 2 月销售的 Hapello 动力火车，原因是橙色蒸汽穹顶可能脱落造成窒息风险，消费者可将产品退回 ASDA 门店并获得退款。</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>product-safety</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>GOV.UK Product Safety Alerts</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>英国大型零售渠道 ASDA 正在对 Hapello 电池动力火车实施终端用户召回，监管通告编号为 2608-0111；小型可拆卸装饰件已成为动力火车及车厢类玩具的明确合规与售后风险点。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>具体变化：ASDA 召回 Hapello Power Train，因顶部橙色蒸汽穹顶容易脱落，产品不符合《2011 年玩具安全条例》，消费者需停止使用、远离幼儿并退回最近的 ASDA 门店退款。</li><li>证据与后续跟踪：官方证据包括 Office for Product Safety and Standards 通告、PSD 通知编号 2608-0111、销售期 2024 年 8 月至 2026 年 2 月及退款措施；下一步应在 ASDA 召回页面和 GOV.UK 产品安全通告中按周核对召回覆盖范围、退货/退款进展及是否发布批次、型号或整改信息。</li><li>设计跟踪：针对火车、汽车及轨道套装，应按英国玩具安全法规复核所有外部装饰件的固定强度和小部件测试结果，并记录橙色蒸汽穹顶等高频接触部件的脱落测试数据；后续可对比同类动力玩具召回案例，按月更新小部件风险清单。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>电池动力火车的顶部装饰件属于高频抓握和碰撞部位；即使面向较大儿童销售，仍需避免可脱落的小部件，尤其要考虑 36 个月以下儿童接触或误用场景。</li><li>该案例未提供售价、销量、具体 SKU 或消费者投诉数量，因此无法判断 ASDA 该品类的市场规模；应通过 ASDA 产品档案、监管附件及退货数据核实产品批次和风险发生率。</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>将“动力火车套装外部小装饰件防脱落”转化为 Robud 木制火车、轨道和角色配件的设计规范：优先采用一体成型或机械锁固结构，取消易拔出的穹顶、烟囱等小件，并在上市前增加拉脱、跌落和模拟误吞风险评审。</li><li>待验证风险：官方页面未披露具体 SKU、批次、售价、销量、事故或投诉数量；Robud 应从 GOV.UK 产品报告及图片、ASDA 召回页面和英国玩具合规测试机构获取完整型号与测试要求，确认目标年龄标注是否足以降低 36 个月以下儿童接触风险。</li></ul>
+              </div>
+            </div>
+            
+            <figure class="media">
+              <img src="https://www.gov.uk/assets/frontend/govuk-opengraph-image-4196a4d6333cf92aaf720047f56cfd91b3532d7635fc21ebcf0d5897df6b5f77.png" alt="Product Recall: ASDA Hapello Power Train (2608-0111)" loading="lazy">
+              <figcaption>GOV.UK Product Safety Alerts 相关图片</figcaption>
+            </figure>
+        
+          </div>
+        </article>
+    
+
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 2</div>
+            <div class="label">市场趋势</div>
+            <div class="score">信息价值： ⭐️ 8.0/10</div>
+          </div>
+          <a class="item-title" href="https://toybook.com/squishmallows-movie-news/" target="_blank" rel="noopener noreferrer">
+            <span class="item-title-en">Jazwares, Amazon MGM Studios to Develop Squishmallows Movie</span>
+            <span class="item-title-zh">Jazwares 与亚马逊米高梅影业将开发 Squishmallows 电影</span>
+          </a>
+          <div class="item-layout has-media">
+            <div class="item-copy">
+              <p class="summary">Jazwares 已与 Amazon MGM Studios 及 FlynnPictureCo.达成合作，开发一部以 Squishmallows 毛绒品牌为灵感的电影，目前项目处于开发阶段。</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>toy-industry</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>The Toy Book</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>Squishmallows 正从毛绒玩具扩展为影视驱动的全球生活方式 IP：品牌据称年规模达 10 亿美元，覆盖 60 多个国家、拥有 3000 多个原创角色和 120 多个全球授权合作伙伴，后续可能推动电影相关毛绒、服装、家居、DIY 及快餐联名产品增长。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>新事件是 Jazwares、Amazon MGM Studios 和 FlynnPictureCo.宣布开发 Squishmallows 电影，由 Beau Flynn 担任制片，品牌的“柔软触感”和角色个性将被用于影视叙事。</li><li>来源披露的商业基础包括 10 亿美元全球品牌规模、60 多个国家、3000 多个角色和 120 多个授权伙伴；下一步应按月跟踪 Amazon MGM Studios、Jazwares 及 Kidscreen/The Toy Book 的项目状态，重点核实发行平台、上映日期、制作预算、角色设定和首批电影授权商品。</li><li>品牌已有 PUMA 鞋履、麦当劳 Happy Meal、Horizon Group USA DIY 手工套件、服装、美妆和家居等跨品类合作；应按季度统计新增授权品类、零售渠道、联名 SKU 和电影预热活动，以判断影视开发是否转化为实际货架扩张。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>具体趋势是以高辨识度角色、可拥抱的柔软材质和“独特个性”为核心的毛绒 IP，通过电影、服装、家居和 DIY 套件延伸到儿童及家庭生活方式场景。</li><li>可关注电影 IP 驱动的角色毛绒、收藏套装、亲子手工包和儿童房软装，主要面向已有 Squishmallows 收藏者、学龄儿童及家庭礼赠渠道；来源未提供新品价格带或销售数据。</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>Robud 可围绕“角色个性+软萌自然主题”开发适合 3-12 岁儿童的木质角色扮演家具、动物主题收纳/阅读角和亲子 DIY 装饰内容，并通过电影上映前的 IP 授权观察、联名礼赠和儿童房场景内容测试需求。</li><li>目前尚无 Squishmallows 电影上映时间、授权范围、目标年龄、零售合作或商品价格证据；在投入开发前应向 Jazwares/Amazon MGM Studios 核实授权可用性，并用儿童房家居渠道的预售点击、收藏率、加购率和家长访谈验证木质产品是否能承接毛绒 IP 热度。</li></ul>
+              </div>
+            </div>
+            
+            <figure class="media">
+              <img src="https://toybook.com/wp-content/uploads/sites/4/2026/08/Jazwares_SquishmallowsMovie.jpg?v=1787017234" alt="Jazwares, Amazon MGM Studios to Develop Squishmallows Movie" loading="lazy">
+              <figcaption>The Toy Book 相关图片</figcaption>
+            </figure>
+        
+          </div>
+        </article>
+    
+
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 3</div>
+            <div class="label">市场趋势</div>
+            <div class="score">信息价值： ⭐️ 8.0/10</div>
+          </div>
+          <a class="item-title" href="https://globaltoynews.com/2026/08/17/the-disruption-report-credit-card-debt-grows/" target="_blank" rel="noopener noreferrer">
+            <span class="item-title-en">The Disruption Report: Credit Card Debt Grows</span>
+            <span class="item-title-zh">《颠覆报告：信用卡债务增长》</span>
+          </a>
+          <div class="item-layout has-media">
+            <div class="item-copy">
+              <p class="summary">文章称信用卡债务和 90 天以上逾期率持续上升、能源成本同比上涨 14%，可能压缩假日玩具可选消费，并推动低价 squish 和收藏品与面向 kidult 的高端玩具继续分化。</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>toy-industry</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>Global Toy News</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>美国假日玩具消费可能进一步呈现“两端化”：预算受压的家庭转向低价 squish 和收藏品，而高收入或成年收藏者仍可能购买高端 kidult 产品；但来源没有给出具体价格带、销量或市场份额，需用 Circana、The Toy Association 及主要零售商假日销售数据验证。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>文章援引 Yahoo! Finance 指出，尽管整体家庭债务下降，信用卡债务和 90 天以上逾期率仍在上升；同时文中称 7 月 CPI 为 3.4%、6 月为 3.5%，能源成本上涨 14%，作者据此判断假日玩具可选消费将承压。</li><li>作者观察到当前更容易动销的是低价 squish、收藏品和面向 kidult 的高端玩具，但没有提供品牌、SKU、价格或销量证据；应从现在起按周跟踪 Circana 玩具品类销售、Target/Walmart/Amazon 的价格与缺货率，并在假日季后核对 The Toy Association 及零售商财报。</li><li>文中将消费者是否愿意为节日新增信用卡债务作为核心不确定性；应核验 Yahoo! Finance 原始数据及美联储信用卡逾期、纽约联储家庭债务报告，重点记录 90 天以上逾期率、可选消费支出和假日玩具客单价的月度变化。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>可见的产品趋势是价格带两极化：低价、易冲动购买的 squish 和收藏品，以及面向 kidult 的高端玩具；来源未明确具体材料、价格区间、品牌或使用场景。</li><li>对 3-12 岁儿童产品而言，预算压力可能提高小体积、低单价、适合作为节日小礼物的玩具需求，但该推断尚缺家庭购买数据和儿童木制玩具品类的独立验证。</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>Robud 可测试面向 3-12 岁儿童的低客单价木制“节日小礼物”系列，例如可独立购买的迷你角色、拼搭配件或小型角色扮演套装，并通过 Amazon、独立站和节日零售渠道进行 A/B 定价与套装组合测试。</li><li>需验证低价木制玩具是否真正受益于预算收紧：应按周记录不同价格带的点击率、转化率、加购率、退货率和售罄速度，并与 squish、收藏品等替代品比较；同时核实文中信用卡债务、CPI 和能源数据的原始来源，避免仅依据评论性文章调整产品结构。</li></ul>
+              </div>
+            </div>
+            
+            <figure class="media">
+              <img src="https://globaltoynews.com/wp-content/uploads/2026/08/48ab090e-4c7c-43d2-a3c5-493d627d8f49.png" alt="The Disruption Report: Credit Card Debt Grows" loading="lazy">
+              <figcaption>Global Toy News 相关图片</figcaption>
+            </figure>
+        
+          </div>
+        </article>
+    
+
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 4</div>
+            <div class="label">Amazon 产品雷达</div>
+            <div class="score">信息价值： ⭐️ 8.7/10</div>
+          </div>
+          <a class="item-title" href="https://www.amazon.com/dp/B0000BX8MA" target="_blank" rel="noopener noreferrer">
+            <span class="item-title-en">Melissa &amp; Doug Food Groups, 21-Piece Wooden Toys Set of Pretend Play Food &amp; Kids Play Kitchen Accessories, Preschool Toys for Girls &amp; Boys Ages 3+</span>
+            <span class="item-title-zh">Melissa &amp; Doug 食物分类 21 件套木制玩具：过家家食物与儿童厨房配件，适合 3 岁以上男孩女孩的学前玩具</span>
+          </a>
+          <div class="item-layout has-media">
+            <div class="item-copy">
+              <p class="summary">该 Melissa &amp; Doug 21 件套木制过家家食物玩具在 Amazon“wooden play kitchen kids”搜索中排名第 4，售价 24.97 美元，评分 4.8 分，累计 37300 条评论。</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>wooden-play-kitchen-hot-us</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>Amazon Radar</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>Amazon 儿童木制厨房玩具搜索结果中，Melissa &amp; Doug 以 24.97 美元的 21 件套产品取得第 4 名，并积累 37300 条评论，显示中低价、可直接补充儿童厨房场景的木制角色扮演套装具有持续的线上曝光和用户基础；但评论数不能替代近期销量或转化率数据。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>具体变化是：在所提供的 Amazon 搜索快照中，Melissa &amp; Doug Food Groups 21-Piece Wooden Toys Set 位列“wooden play kitchen kids”第 4 名，产品面向 3 岁以上儿童，价格为 24.97 美元，评分为 4.8 分。</li><li>证据包括 Amazon 排名、标价、评分和 37300 条评论；下一步应每周记录同一关键词下的排名、价格、评分、评论增量和是否缺货，以判断该产品的近期需求与竞争稳定性。</li><li>来源没有披露销量、转化率、评论文本、套装材料细节或排名历史；应按月抽样分析 Amazon 最新评论中的高频玩法、耐用性和小部件反馈，并对比 KidKraft、IKEA 等儿童厨房配件套装的价格与排名。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>产品形态是面向 3 岁以上儿童的 21 件套木制仿真食物，核心使用场景为儿童厨房中的角色扮演、食物分类和亲子互动，价格带位于约 25 美元的入门级套装区间。</li><li>4.8 分和 37300 条评论显示“木制材质+多件套+厨房配件补充”是成熟的线上商品组合，但来源未说明具体木材、涂层、单件尺寸或是否存在可吞咽小部件，不能据此判断材料或安全优势。</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>Robud 可开发约 25 美元价格带的木制厨房补充套装，以食物分类、切配组合或菜单角色扮演为主题，明确标注 3 岁以上适用年龄，并通过 Amazon 关键词和儿童厨房场景图测试与主厨房产品的交叉销售。</li><li>主要风险是缺少近期销量、用户痛点、材料认证和安全反馈证据；在立项前应抓取近 90 天评论新增量与差评主题，核验木材和涂层合规文件、单件尺寸及小部件风险，再决定套装件数和定价。</li></ul>
+              </div>
+            </div>
+            
+            <figure class="media">
+              <img src="https://m.media-amazon.com/images/I/81Az1cZRd9L._AC_UL320_.jpg" alt="Melissa &amp; Doug Food Groups, 21-Piece Wooden Toys Set of Pretend Play Food &amp; Kids Play Kitchen Accessories, Preschool Toys for Girls &amp; Boys Ages 3+" loading="lazy">
+              <figcaption>Amazon Radar 相关图片</figcaption>
+            </figure>
+        
+          </div>
+        </article>
+    
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title"><span class="icon">📊</span> 今日市场关键词</h2>
+      <table>
+        <thead><tr><th>方向</th><th>关键词</th><th>Robud 关联</th></tr></thead>
+        <tbody>
+        <tr>
+          <td><span class="icon">🌱</span> 户外</td>
+          <td>Nature Play</td>
+          <td><span class="stars">★★★★★</span></td>
+        </tr>
+        
+
+        <tr>
+          <td><span class="icon">🧩</span> 教育</td>
+          <td>Montessori</td>
+          <td><span class="stars">★★★★</span></td>
+        </tr>
+        
+
+        <tr>
+          <td><span class="icon">🏡</span> 空间</td>
+          <td>Kids Room Solution</td>
+          <td><span class="stars">★★★★</span></td>
+        </tr>
+        
+
+        <tr>
+          <td><span class="icon">🪵</span> 材质</td>
+          <td>Wooden &amp; Sustainable</td>
+          <td><span class="stars">★★★★</span></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title"><span class="icon">🚩</span> 今日 Robud 关注方向</h2>
+      <div class="focus">
+        <div class="focus-panel">
+          <h3><span class="icon">🛠</span> 产品团队</h3>
+          <ul><li>复盘风险结构、警示标签、零件尺寸和稳定性设计。</li><li>跟踪品类、卖点和用户语言，沉淀为产品定义参考。</li><li>关注木质材料、分龄教育价值和 Montessori 叙事。</li></ul>
+        </div>
+        <div class="focus-panel">
+          <h3><span class="icon">🔎</span> 运营团队</h3>
+          <ul><li>Montessori 搜索机会</li><li>Amazon 竞品变化</li><li>用户需求关键词</li></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
