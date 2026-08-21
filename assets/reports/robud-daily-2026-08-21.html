@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Robud 儿童产品行业日报 - 2026-08-21</title>
+  <style>
+    :root {
+      --brand-brown: #8a5a36;
+      --deep-brown: #4d3828;
+      --warm-paper: #fbf7ef;
+      --cream: #fffdf8;
+      --sage: #7f9271;
+      --sage-soft: #eef3e8;
+      --blue: #2f6fb3;
+      --line: #e7ddcf;
+      --text: #2f2b27;
+      --muted: #776d62;
+      --gold: #c7902e;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--warm-paper);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+      line-height: 1.68;
+    }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .page {
+      width: min(980px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 36px 0 54px;
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: end;
+      padding: 32px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.92), rgba(255,253,248,.86)),
+        repeating-linear-gradient(90deg, rgba(138,90,54,.07) 0, rgba(138,90,54,.07) 1px, transparent 1px, transparent 22px);
+    }
+    .kicker {
+      color: var(--sage);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+    }
+    h1 {
+      margin: 8px 0 10px;
+      color: var(--brand-brown);
+      font-size: 30px;
+      line-height: 1.25;
+      letter-spacing: 0;
+    }
+    .subtitle { margin: 0; color: var(--muted); font-size: 15px; }
+    .datebox {
+      min-width: 132px;
+      padding: 14px 16px;
+      border-left: 3px solid var(--brand-brown);
+      background: rgba(255, 255, 255, .62);
+      color: var(--deep-brown);
+      font-weight: 700;
+    }
+    .section {
+      margin-top: 26px;
+      padding-top: 4px;
+    }
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 14px;
+      color: var(--deep-brown);
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+    .icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 6px;
+      background: var(--sage-soft);
+      color: var(--sage);
+      font-size: 14px;
+      vertical-align: -2px;
+    }
+    .cards { display: grid; gap: 16px; }
+    .card {
+      padding: 20px 22px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--cream);
+      box-shadow: 0 10px 24px rgba(77, 56, 40, .06);
+    }
+    .card-head {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .rank {
+      color: var(--gold);
+      font-weight: 800;
+      white-space: nowrap;
+    }
+    .label {
+      color: var(--brand-brown);
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .score {
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--sage-soft);
+      color: var(--sage);
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .item-title {
+      display: block;
+      margin: 4px 0 14px;
+      color: var(--blue);
+      font-weight: 800;
+      line-height: 1.45;
+    }
+    .item-title-en { display: block; font-size: 18px; }
+    .item-title-zh {
+      display: block;
+      margin-top: 4px;
+      color: var(--deep-brown);
+      font-size: 14px;
+      font-weight: 650;
+    }
+    .summary {
+      margin: 0 0 14px;
+      color: var(--text);
+      font-size: 15px;
+    }
+    .item-layout {
+      display: grid;
+      gap: 16px;
+    }
+    .item-layout.has-media {
+      grid-template-columns: minmax(0, 1fr) 260px;
+      align-items: start;
+    }
+    .media {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid #e9decf;
+      border-radius: 8px;
+      background: #f6efe5;
+    }
+    .media img {
+      display: block;
+      width: 100%;
+      height: 260px;
+      padding: 12px;
+      object-fit: contain;
+      background: #f6efe5;
+    }
+    .media figcaption {
+      padding: 7px 9px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin: 14px 0;
+    }
+    .meta {
+      min-height: 82px;
+      padding: 12px;
+      border: 1px solid #ece3d7;
+      border-radius: 6px;
+      background: #fffaf1;
+    }
+    .meta b {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--brand-brown);
+      font-size: 13px;
+    }
+    .meta span { color: var(--muted); font-size: 14px; }
+    .observe {
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-left: 3px solid var(--sage);
+      background: #f7f9f2;
+      border-radius: 0 6px 6px 0;
+    }
+    .key-takeaway {
+      border-left-color: var(--brand-brown);
+      background: #fff6e8;
+    }
+    .opportunity {
+      border-left-color: #6f907d;
+      background: #f3f8ef;
+    }
+    .observe b { color: var(--deep-brown); }
+    ul { margin: 8px 0 0; padding-left: 20px; }
+    li { margin: 4px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 8px;
+      background: var(--cream);
+      border: 1px solid var(--line);
+    }
+    th, td {
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+    }
+    th {
+      color: var(--brand-brown);
+      background: #f5ecdf;
+      font-size: 14px;
+    }
+    tr:last-child td { border-bottom: 0; }
+    .stars { color: var(--gold); letter-spacing: 0; }
+    .focus {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .focus-panel {
+      padding: 18px 20px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--cream);
+    }
+    .focus-panel h3 {
+      margin: 0;
+      color: var(--brand-brown);
+      font-size: 16px;
+    }
+    .empty {
+      padding: 28px;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      background: rgba(255,255,255,.55);
+      color: var(--muted);
+    }
+    @media (max-width: 720px) {
+      .page { width: min(100% - 20px, 980px); padding-top: 18px; }
+      .hero { grid-template-columns: 1fr; padding: 22px; }
+      h1 { font-size: 24px; }
+      .card-head { grid-template-columns: 1fr auto; }
+      .rank { grid-column: 1 / -1; }
+      .item-layout.has-media { grid-template-columns: 1fr; }
+      .grid, .focus { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div>
+        <div class="kicker">Robud Daily Market Brief</div>
+        <h1>Robud 儿童产品行业日报</h1>
+        <p class="subtitle">从 110 条内容中筛选出 3 条相关优质热点，按业务优先级整理。</p>
+      </div>
+      <div class="datebox">2026-08-21</div>
+    </header>
+
+    <section class="section">
+      <h2 class="section-title"><span class="icon">🔥</span> 今日重点关注（TOP 5）</h2>
+      <div class="cards">
+        
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 1</div>
+            <div class="label">市场趋势</div>
+            <div class="score">信息价值： ⭐️ 8.0/10</div>
+          </div>
+          <a class="item-title" href="https://toybook.com/fizz-creations-hasbro-news/" target="_blank" rel="noopener noreferrer">
+            <span class="item-title-en">Fizz Creations to Launch Hasbro Handheld Collection in 2027</span>
+            <span class="item-title-zh">Fizz Creations 将于 2027 年推出 Hasbro 掌上游戏系列</span>
+          </a>
+          <div class="item-layout has-media">
+            <div class="item-copy">
+              <p class="summary">Fizz Creations 与 Hasbro 合作，将 Monopoly、Scrabble、Yahtzee、Operation、Battleship 和 Connect 4 改造成带 LCD 屏幕、按键和钥匙扣的便携式数字游戏机，首批产品计划于 2027 年初上市。</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>toy-industry</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>The Toy Book</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>传统桌游 IP 正在通过授权合作进入钥匙扣尺寸的低门槛便携数字娱乐渠道；Fizz Creations 将其既有 Keyring Arcade 和 Colour Handheld 经验应用于 Hasbro 六款 IP，显示经典游戏品牌可能通过小型掌机拓展收藏、礼品和随身娱乐场景。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>具体变化是：Fizz Creations 与 Hasbro 宣布合作，首波于 2027 年初推出六款掌上游戏机，涵盖 Monopoly、Scrabble、Yahtzee、Operation、Battleship 和 Connect 4，产品配备 LCD 屏幕、原创玩法、实体按键和钥匙扣。</li><li>现有证据包括 The Toy Book 报道、Fizz Creations 与 Hasbro 品牌信息、既有 Keyring Arcade 和 Colour Handheld 产品经验，以及 2026 年 9 月 14 日至 23 日在加州 El Segundo 1960 Grand Building、Suite 810 展出的预览安排；应在 LA Previews 2026 展会期间记录实物尺寸、零售商反馈、预订单和展商公布的规格。</li><li>来源未公布售价、目标年龄、屏幕与电池规格、上市国家、零售渠道或销量；应在 2027 年初上市前按月追踪 Fizz Creations、Hasbro 及主要玩具零售商的产品页、建议零售价、预售数量和消费者评价。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>产品形态从桌面棋盘转向钥匙扣尺寸的 LCD 掌机，结合实体按键与数字化原版玩法，适用于旅行、等待和收藏礼品场景，核心受众包括桌游 IP 粉丝、玩家和怀旧消费者。</li><li>该案例显示经典 IP 便携化依赖小型电子硬件和授权内容，但来源没有提供价格带、材质、耐用性、音量控制或儿童年龄分级，暂不能判断其是否适合 3-12 岁儿童的独立使用。</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>Robud 可研究“经典桌游规则+可收纳便携形态”的儿童产品方向，例如开发适合家庭旅行和餐桌使用的木质迷你桌游套装，加入磁吸棋子、可替换任务卡和收纳钥匙扣袋，并以 3-8 岁亲子共玩为首个内容场景。</li><li>需要验证电子掌机的实际售价、目标年龄、屏幕使用时长、IP 授权成本、儿童安全与电池合规要求，以及 LA Previews 展会中的零售商订货反应；在缺少这些数据前，不应直接复制 LCD 掌机或假设其会形成大规模儿童需求。</li></ul>
+              </div>
+            </div>
+            
+            <figure class="media">
+              <img src="https://toybook.com/wp-content/uploads/sites/4/2026/08/FizzCreations_HasbroCollectionFeature.jpg?v=1787276888" alt="Fizz Creations to Launch Hasbro Handheld Collection in 2027" loading="lazy">
+              <figcaption>The Toy Book 相关图片</figcaption>
+            </figure>
+        
+          </div>
+        </article>
+    
+
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 2</div>
+            <div class="label">市场趋势</div>
+            <div class="score">信息价值： ⭐️ 7.4/10</div>
+          </div>
+          <a class="item-title" href="https://globaltoynews.com/2026/08/20/uglydoll-is-back-jazwares-reimagines-a-cult-toy-favorite-for-a-new-generation/" target="_blank" rel="noopener noreferrer">
+            <span class="item-title-en">UGLYDOLL Is Back: Jazwares Reimagines a Cult Toy Favorite for a New Generation</span>
+            <span class="item-title-zh">UGLYDOLL 回归：Jazwares 为新一代重新构想这一 cult 玩具经典</span>
+          </a>
+          <div class="item-layout has-media">
+            <div class="item-copy">
+              <p class="summary">Jazwares 与 Pretty Ugly 达成长期战略合作，计划从 2027 年秋季起在全球零售渠道推出涵盖毛绒、比例多样的公仔及配件、收藏级乙烯基玩具、角色扮演玩具与服装、拼搭套装和新奇产品的全新 UGLYDOLL 系列。</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>toy-industry</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>Global Toy News</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>拥有自 2001 年历史和多代粉丝基础的 UGLYDOLL 将从设计师毛绒品牌扩展为全球多品类玩具与收藏品平台，显示 Jazwares 正利用成熟 IP 同时覆盖怀旧成年粉丝和首次接触角色的儿童，并通过全球零售渠道和多个价格层级扩大商业触点；但来源尚未公布价格、SKU 数量或具体零售商。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>具体变化：Jazwares 与 UGLYDOLL 品牌所有者 Pretty Ugly 宣布长期合作，Jazwares 将负责设计、开发、制造和全球分销，首批产品预计于 2027 年秋季全球上市，品类由毛绒扩展至多比例公仔及配件、收藏级乙烯基玩具、角色扮演玩具与服装、拼搭套装和新奇产品。</li><li>证据与后续跟踪：来源列出了 Wage、Ox、Babo、Ice-Bat、Moxy 和 Tray 等核心角色，并引用双方高管对多代粉丝和儿童新用户的定位；应按季度跟踪 Jazwares 或 Pretty Ugly 的产品图、SKU、年龄分级、建议零售价和首发零售商，进入 2027 年秋季后按月核查上架数量、渠道覆盖和消费者评价。</li><li>商业验证：文章判断收藏市场偏好独特角色、非传统审美和跨年龄消费，但未给出 UGLYDOLL 当前销售规模或市场份额；应通过 Circana 等玩具市场数据、零售商预售/搜索排名、社交媒体角色互动量和开售后销量表现验证该 IP 能否从怀旧粉丝扩展到儿童消费。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>产品趋势是将具有强烈视觉识别度和“个性、不完美、自我表达”叙事的角色 IP，从单一毛绒延展为毛绒、公仔、乙烯基收藏品、角色扮演、拼搭和新奇产品组合，以覆盖儿童与成年收藏者的不同使用和购买场景。</li><li>明确可见的产品形态包括原尺寸及多比例毛绒、公仔配件、收藏级乙烯基玩具、服装和拼搭套装，但来源未披露材料细节、价格带、具体年龄段或零售渠道组合，不能据此判断其木质或高端产品定位。</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>Robud 可将“经典角色 IP 跨品类重启、儿童与成年粉丝共用”的信号转化为产品与内容行动：开发不依赖授权 IP 的原创个性化角色主题木质角色扮演或开放式拼搭配件系列，并用角色故事卡、亲子共玩内容和可收集组件支持从 3-12 岁儿童到家庭用户的持续购买。</li><li>主要风险是 UGLYDOLL 尚未公布具体 SKU、价格、年龄分级、材料、安全标准、零售商或销售目标；在投入模仿其跨品类结构前，应通过 Jazwares 官方公告、零售商上架信息、2027 年玩具展展品和开售后的价格与评价数据，按季度至上市前、上市后按月验证需求。</li></ul>
+              </div>
+            </div>
+            
+            <figure class="media">
+              <img src="https://globaltoynews.com/wp-content/uploads/2026/08/dd.jpg" alt="UGLYDOLL Is Back: Jazwares Reimagines a Cult Toy Favorite for a New Generation" loading="lazy">
+              <figcaption>Global Toy News 相关图片</figcaption>
+            </figure>
+        
+          </div>
+        </article>
+    
+
+        <article class="card">
+          <div class="card-head">
+            <div class="rank">⭐ TOP 3</div>
+            <div class="label">Amazon 产品雷达</div>
+            <div class="score">信息价值： ⭐️ 8.5/10</div>
+          </div>
+          <a class="item-title" href="https://www.amazon.com/Melissa-Doug-Wooden-Pretend-Self-Sticking/dp/B0000658L4" target="_blank" rel="noopener noreferrer">
+            <span class="item-title-en">Melissa &amp; Doug Wooden Pizza Party Play Set, 36 Self-Stick Toppings, Pizza Toy Kitchen Set &amp; Play Kitchen Accessories, Preschool Toys for Boys &amp; Girls 3+ | 45 Pieces, 6 Pizza Slices, 36 Toppings, Pizza Cutter, Spatula, Tray, Pretend Play Food, Preschool Toys for Kids, Ages 3+</span>
+            <span class="item-title-zh">Melissa &amp; Doug 木制披萨派对角色扮演套装，含 36 个自粘配料、披萨玩具厨房套装及厨房玩具配件，45 件套、6 块披萨、披萨刀、铲子和托盘，适合 3 岁以上男孩女孩的学前玩具</span>
+          </a>
+          <div class="item-layout has-media">
+            <div class="item-copy">
+              <p class="summary">Amazon 页面显示，这款适合 3 岁以上儿童的 Melissa &amp; Doug 45 件木制披萨派对套装在“wooden play kitchen kids”搜索中排名第 4，标价 17.49 美元并显示 44%优惠，评分 4.8 且累计 12,800 条评论。</p>
+              <div class="grid">
+                <div class="meta"><b><span class="icon">🏷</span> 品类</b><span>wooden-play-kitchen-hot-us</span></div>
+                <div class="meta"><b><span class="icon">📰</span> 来源</b><span>Amazon Radar</span></div>
+                <div class="meta"><b><span class="icon">💡</span> 市场信号</b><span>Amazon 木制儿童厨房玩具搜索结果中，Melissa &amp; Doug 以 17.49 美元的中低价提供 45 件、多配料、可切分与端盘的完整披萨角色扮演体验，并取得第 4 名、4.8 分和 12,800 条评论，显示“高组件数量+低于 20 美元价格带+开放式厨房情境”具备较强平台可见度；但尚无销量或转化数据证明其实际销售领先。</span></div>
+              </div>
+              <div class="observe key-takeaway">
+                <b><span class="icon">🧠</span> 关键内容提炼</b>
+                <ul><li>具体变化是：该 Melissa &amp; Doug 木制披萨套装当前在 Amazon“wooden play kitchen kids”搜索中排名第 4，页面价格为 17.49 美元并显示 44%优惠，配置从 6 块披萨、36 个自粘配料扩展到披萨刀、铲子和可兼作收纳的托盘，共 45 件，适用年龄为 3 岁以上。</li><li>证据包括 Amazon 页面的 4.8/5 评分、12,800 条评论、Amazon’s Choice 标识和“可立即发货”描述；下一步应每周记录该关键词排名、实际成交价、优惠幅度、库存/配送状态和评论新增量，连续 4-8 周判断排名与促销是否稳定。</li><li>应进一步抽样分析最新 100-200 条 Amazon 评论，按自粘配料耐久性、木材/涂层气味、边缘安全、收纳托盘、3 岁儿童独立操作和配件缺失等主题编码，并核对 Melissa &amp; Doug 官方规格及 CPSC/召回数据库；当前页面没有销量、材质认证或安全测试信息。</li></ul>
+              </div>
+              <div class="observe">
+                <b><span class="icon">👀</span> 产品观察</b>
+                <ul><li>具体产品趋势是：以木制披萨切片为核心、通过 36 个自粘配料实现反复搭配的开放式角色扮演，组合“制作—切分—端盘—分享”完整社交情境，适合 3 岁以上家庭厨房、玩具商店或学前游戏场景。</li><li>产品采用 45 件高组件数量、17.49 美元促销价和托盘收纳的一体化形式；页面强调圆润边缘、无屏幕游戏和手眼协调，但未披露木材种类、涂层、粘扣材料或具体安全标准。</li></ul>
+              </div>
+              <div class="observe opportunity">
+                <b><span class="icon">👉</span> Robud 机会&amp;注意点</b>
+                <ul><li>Robud 可测试一款面向 3-6 岁家庭角色扮演场景的木制“制作与分享”食物套装：采用可替换配料、可收纳托盘和切分工具，建立 15-20 美元基础套装与可追加配料包的价格/内容梯度，并在 Amazon 及自有渠道用“组件数量、收纳、开放式玩法”进行对比展示。</li><li>需先验证该 17.49 美元价格是否依赖短期 44%促销、排名是否由广告驱动，以及消费者真正重视的是配件数量、粘贴玩法还是木制材质；应通过 4-8 周价格与排名追踪、评论主题统计、竞品套装对比和 CPSC/ASTM 适用要求核查，避免仅复制组件数量而忽视配料脱落、误吞和涂层安全风险。</li></ul>
+              </div>
+            </div>
+            
+            <figure class="media">
+              <img src="https://fls-na.amazon.com/1/batch/1/OP/ATVPDKIKX0DER:143-0272849-9099352:9AXRZ1HAQ29GPNZEWVN6$uedata=s:%2Frd%2Fuedata%3Fstaticb%26id%3D9AXRZ1HAQ29GPNZEWVN6:0" alt="Melissa &amp; Doug Wooden Pizza Party Play Set, 36 Self-Stick Toppings, Pizza Toy Kitchen Set &amp; Play Kitchen Accessories, Preschool Toys for Boys &amp; Girls 3+ | 45 Pieces, 6 Pizza Slices, 36 Toppings, Pizza Cutter, Spatula, Tray, Pretend Play Food, Preschool Toys for Kids, Ages 3+" loading="lazy">
+              <figcaption>Amazon Radar 相关图片</figcaption>
+            </figure>
+        
+          </div>
+        </article>
+    
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title"><span class="icon">📊</span> 今日市场关键词</h2>
+      <table>
+        <thead><tr><th>方向</th><th>关键词</th><th>Robud 关联</th></tr></thead>
+        <tbody>
+        <tr>
+          <td><span class="icon">🌱</span> 户外</td>
+          <td>Nature Play</td>
+          <td><span class="stars">★★★★★</span></td>
+        </tr>
+        
+
+        <tr>
+          <td><span class="icon">🧩</span> 教育</td>
+          <td>Montessori</td>
+          <td><span class="stars">★★★★</span></td>
+        </tr>
+        
+
+        <tr>
+          <td><span class="icon">🏡</span> 空间</td>
+          <td>Kids Room Solution</td>
+          <td><span class="stars">★★★★</span></td>
+        </tr>
+        
+
+        <tr>
+          <td><span class="icon">🪵</span> 材质</td>
+          <td>Wooden &amp; Sustainable</td>
+          <td><span class="stars">★★★★</span></td>
+        </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title"><span class="icon">🚩</span> 今日 Robud 关注方向</h2>
+      <div class="focus">
+        <div class="focus-panel">
+          <h3><span class="icon">🛠</span> 产品团队</h3>
+          <ul><li>跟踪品类、卖点和用户语言，沉淀为产品定义参考。</li><li>关注木质材料、分龄教育价值和 Montessori 叙事。</li></ul>
+        </div>
+        <div class="focus-panel">
+          <h3><span class="icon">🔎</span> 运营团队</h3>
+          <ul><li>Montessori 搜索机会</li><li>Amazon 竞品变化</li><li>用户需求关键词</li></ul>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
